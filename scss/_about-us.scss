@@ -1,0 +1,96 @@
+.section-about-us {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &-left {
+        width: 40%;
+        position: relative;
+        left: -200px;
+        img {
+            width: 100%;
+            opacity: 0.75;
+        }
+    }
+    &-right {
+        width: 60%;
+        margin: 1rem;
+        border: 1px solid $color-primary;
+        padding: 3rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .main-btn {
+            margin-top: 2rem;
+            width: 15%;
+            align-self: center;
+            padding: 1.2rem;
+            background-color: $color-primary;
+            outline: none;
+            border: 1px solid transparent;
+            border-radius: 15px;
+            font-size: 1.4rem;
+            font-family: $font-fugaz-one;
+            &:hover {
+                background-color: darken($color: $color-primary, $amount: 20);
+            }
+        }
+        .description-box {
+            margin-top: 3rem;
+            color: $color-primary;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.star-up,
+.star-below {
+    font-size: 2rem;
+}
+
+.star {
+    &-up {
+        @include star-position;
+        top: -3px;
+    }
+    &-below {
+        @include star-position;
+        bottom: 3px;
+    }
+}
+
+.description {
+    font-size: 1.8rem;
+    padding: 2.4rem;
+    border: 1px dotted $color-primary;
+    margin: 1rem 2rem;
+    border-radius: 9px;
+    font-family: $font-lato;
+    font-style: italic;
+    &-box {
+        position: relative;
+    }
+    &::first-letter {
+        font-size: 2.4rem;
+    }
+}
+
+.main-heading {
+    @include main-text;
+    &:after {
+        content: "  ";
+        height: 3px;
+        background-color: $color-primary;
+        width: 90px;
+        display: block;
+        border-radius: 2px;
+        margin: 0 auto;
+    }
+}
+
+.sub-heading {
+    @include sub-text;
+}

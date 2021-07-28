@@ -1,0 +1,57 @@
+@mixin positionAbsolute($top) {
+    position: absolute;
+    top: $top;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin main-text {
+    color: $color-primary;
+    font-family: $font-dancing-script;
+    font-size: 12.8rem;
+    text-align: center;
+}
+
+@mixin sub-text {
+    color: $color-secondary;
+    font-family: $font-lato;
+    text-align: center;
+    font-size: 3.2rem;
+    margin-top: 3.2rem;
+    text-transform: uppercase;
+}
+
+@mixin star-position {
+    position: absolute;
+    z-index: 999;
+    background-color: $color-bg;
+    padding: 0 5px;
+}
+
+@mixin logo {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-primary;
+    border: 3px solid $color-primary;
+    padding: 2rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+@mixin heading {
+    color: $color-primary;
+    font-size: 4rem;
+    font-family: $font-fugaz-one;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@mixin sub-heading {
+    color: $color-secondary;
+    font-size: 1.5rem;
+    font-family: $font-dancing-script;
+    text-transform: uppercase;
+    text-align: center;
+}

@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fugaz+One&family=Lato:ital,wght@0,400;1,300&display=swap");
+$color-primary: #fdcb6e;
+$color-secondary: #b2bec3;
+$color-bg: #2d3436;
+$color-black: #000;
+$font-dancing-script: "Dancing Script";
+$font-lato: "Lato";
+$font-fugaz-one: "Fugaz One";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: $color-bg;
+    font-family: $font-lato, sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+}

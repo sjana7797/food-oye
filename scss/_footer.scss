@@ -1,0 +1,49 @@
+.footer {
+    &-container {
+        display: flex;
+        flex-direction: column;
+        padding: 7rem;
+        align-items: center;
+    }
+    &-brand {
+        display: flex;
+        margin-bottom: 5rem;
+        &-icon {
+            @include logo;
+        }
+        &-text-box {
+            display: flex;
+            flex-direction: column;
+        }
+        &-main-line {
+            @include heading;
+        }
+        &-sub-line {
+            @include sub-heading;
+        }
+    }
+    &-social-links {
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+        .item {
+            list-style: none;
+            font-size: 3.2rem;
+            a ion-icon {
+                color: lighten($color: $color-primary, $amount: 18);
+                transition: all 0.3s;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+    &-copyrights {
+        margin-top: 3rem;
+        p {
+            color: $color-secondary;
+            font-size: 1.4rem;
+            text-transform: capitalize;
+        }
+    }
+}
