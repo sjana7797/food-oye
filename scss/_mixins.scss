@@ -30,14 +30,8 @@
 
 @mixin logo {
     font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: $color-primary;
-    border: 3px solid $color-primary;
-    padding: 2rem;
-    border-radius: 50%;
-    margin-right: 2rem;
+    padding: 3rem;
 }
 
 @mixin heading {

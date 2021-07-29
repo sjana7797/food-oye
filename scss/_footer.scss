@@ -9,7 +9,20 @@
         display: flex;
         margin-bottom: 5rem;
         &-icon {
-            @include logo;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            border: 3px solid $color-primary;
+            border-radius: 50%;
+            margin-right: 2rem;
+            & i {
+                @include logo;
+                @media (max-width: 1200px) {
+                    font-size: 2.4rem;
+                    padding: 2.4rem;
+                }
+            }
         }
         &-text-box {
             display: flex;
@@ -17,18 +30,30 @@
         }
         &-main-line {
             @include heading;
+            @media (max-width: 1200px) {
+                font-size: 3rem;
+            }
         }
         &-sub-line {
             @include sub-heading;
+            @media (max-width: 1200px) {
+                font-size: 1.2rem;
+            }
         }
     }
     &-social-links {
         display: flex;
         justify-content: space-between;
         gap: 5rem;
+        @media (max-width: 1200px) {
+            gap: 3rem;
+        }
         .item {
             list-style: none;
             font-size: 3.2rem;
+            @media (max-width: 1200px) {
+                font-size: 2.4rem;
+            }
             a ion-icon {
                 color: lighten($color: $color-primary, $amount: 18);
                 transition: all 0.3s;

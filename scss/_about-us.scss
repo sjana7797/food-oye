@@ -3,6 +3,9 @@
     width: 100%;
     display: flex;
     align-items: center;
+    @media (max-width: 978px) {
+        justify-content: center;
+    }
     &-left {
         width: 40%;
         position: relative;
@@ -10,6 +13,9 @@
         img {
             width: 100%;
             opacity: 0.75;
+        }
+        @media (max-width: 978px) {
+            width: 0%;
         }
     }
     &-right {
@@ -21,6 +27,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media (max-width: 1600px) {
+            margin: 2rem;
+        }
+        @media (max-width: 978px) {
+            width: 85%;
+        }
         .main-btn {
             margin-top: 2rem;
             width: 15%;
@@ -32,6 +44,15 @@
             border-radius: 15px;
             font-size: 1.4rem;
             font-family: $font-fugaz-one;
+            @media (max-width: 1600px) {
+                padding: 1rem;
+                font-size: 1.2rem;
+            }
+            @media (max-width: 978px) {
+                width: 40%;
+                padding: 0.8rem;
+                font-size: 1rem;
+            }
             &:hover {
                 background-color: darken($color: $color-primary, $amount: 20);
             }
@@ -49,6 +70,9 @@
 .star-up,
 .star-below {
     font-size: 2rem;
+    @media (max-width: 978px) {
+        font-size: 1.6rem;
+    }
 }
 
 .star {
@@ -75,11 +99,28 @@
     }
     &::first-letter {
         font-size: 2.4rem;
+        @media (max-width: 1600px) {
+            font-size: 1.8rem;
+        }
+    }
+    @media (max-width: 1600px) {
+        font-size: 1.2rem;
+        padding: 1.8rem;
+    }
+    @media (max-width: 978px) {
+        font-size: 1.2rem;
+        padding: 1.2rem;
     }
 }
 
 .main-heading {
     @include main-text;
+    @media (max-width: 1600px) {
+        font-size: 6.4rem;
+    }
+    @media (max-width: 978px) {
+        font-size: 4.8rem;
+    }
     &:after {
         content: "  ";
         height: 3px;
@@ -88,9 +129,21 @@
         display: block;
         border-radius: 2px;
         margin: 0 auto;
+        @media (max-width: 1600px) {
+            width: 70px;
+        }
+        @media (max-width: 978px) {
+            width: 50px;
+        }
     }
 }
 
 .sub-heading {
     @include sub-text;
+    @media (max-width: 1600px) {
+        font-size: 3.2rem;
+    }
+    @media (max-width: 978px) {
+        font-size: 2rem;
+    }
 }
