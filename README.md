@@ -14,4 +14,4 @@ Your are welcome to contribute in Food Oye.
 
 ---
 ## View Site
-[Food Oye](https://sjana7797.github.io/food-oye-v1/)
+[Food Oye](https://sjana7797.github.io/food-oye/)
